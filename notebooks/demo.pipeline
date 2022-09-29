@@ -13,23 +13,25 @@
           "type": "execution_node",
           "op": "execute-notebook-node",
           "app_data": {
-            "filename": "preprocessing.ipynb",
-            "runtime_image": "quay.io/mmurakam/industrial-edge-ml-pipeline-image:v0.13.0",
-            "env_vars": [],
-            "include_subdirectories": false,
-            "outputs": [
-              "sensor-training-data.csv"
-            ],
-            "dependencies": [
-              "raw-data.csv"
-            ],
-            "invalidNodeError": null,
+            "label": "preprocessing.ipynb",
+            "component_parameters": {
+              "filename": "preprocessing.ipynb",
+              "runtime_image": "quay.io/mmurakam/industrial-edge-ml-pipeline-image:v0.13.0",
+              "env_vars": [],
+              "include_subdirectories": false,
+              "outputs": [
+                "sensor-training-data.csv"
+              ],
+              "dependencies": [
+                "raw-data.csv"
+              ]
+            },
             "ui_data": {
               "label": "preprocessing.ipynb",
               "image": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20viewBox%3D%220%200%2022%2022%22%3E%0A%20%20%3Cg%20class%3D%22jp-icon-warn0%20jp-icon-selectable%22%20fill%3D%22%23EF6C00%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M18.7%203.3v15.4H3.3V3.3h15.4m1.5-1.5H1.8v18.3h18.3l.1-18.3z%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M16.5%2016.5l-5.4-4.3-5.6%204.3v-11h11z%22%2F%3E%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E%0A",
               "x_pos": 306,
               "y_pos": 617,
-              "description": "Notebook file"
+              "description": "Run notebook file"
             }
           },
           "inputs": [
@@ -66,22 +68,24 @@
           "type": "execution_node",
           "op": "execute-notebook-node",
           "app_data": {
-            "filename": "feature_extraction.ipynb",
-            "runtime_image": "quay.io/mmurakam/industrial-edge-ml-pipeline-image:v0.13.0",
-            "env_vars": [],
-            "include_subdirectories": false,
-            "invalidNodeError": null,
-            "outputs": [
-              "features.pickle",
-              "labels.pickle"
-            ],
-            "dependencies": [],
+            "label": "feature_extraction.ipynb",
+            "component_parameters": {
+              "filename": "feature_extraction.ipynb",
+              "runtime_image": "quay.io/mmurakam/industrial-edge-ml-pipeline-image:v0.13.0",
+              "env_vars": [],
+              "include_subdirectories": false,
+              "outputs": [
+                "features.pickle",
+                "labels.pickle"
+              ],
+              "dependencies": []
+            },
             "ui_data": {
               "label": "feature_extraction.ipynb",
               "image": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20viewBox%3D%220%200%2022%2022%22%3E%0A%20%20%3Cg%20class%3D%22jp-icon-warn0%20jp-icon-selectable%22%20fill%3D%22%23EF6C00%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M18.7%203.3v15.4H3.3V3.3h15.4m1.5-1.5H1.8v18.3h18.3l.1-18.3z%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M16.5%2016.5l-5.4-4.3-5.6%204.3v-11h11z%22%2F%3E%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E%0A",
               "x_pos": 717,
               "y_pos": 671,
-              "description": "Notebook file"
+              "description": "Run notebook file"
             }
           },
           "inputs": [
@@ -125,21 +129,23 @@
           "type": "execution_node",
           "op": "execute-notebook-node",
           "app_data": {
-            "filename": "training.ipynb",
-            "runtime_image": "quay.io/mmurakam/industrial-edge-ml-pipeline-image:v0.13.0",
-            "env_vars": [],
-            "include_subdirectories": false,
-            "invalidNodeError": null,
-            "outputs": [
-              "model.joblib"
-            ],
-            "dependencies": [],
+            "label": "training.ipynb",
+            "component_parameters": {
+              "filename": "training.ipynb",
+              "runtime_image": "quay.io/mmurakam/industrial-edge-ml-pipeline-image:v0.13.0",
+              "env_vars": [],
+              "include_subdirectories": false,
+              "outputs": [
+                "model.joblib"
+              ],
+              "dependencies": []
+            },
             "ui_data": {
               "label": "training.ipynb",
               "image": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20viewBox%3D%220%200%2022%2022%22%3E%0A%20%20%3Cg%20class%3D%22jp-icon-warn0%20jp-icon-selectable%22%20fill%3D%22%23EF6C00%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M18.7%203.3v15.4H3.3V3.3h15.4m1.5-1.5H1.8v18.3h18.3l.1-18.3z%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M16.5%2016.5l-5.4-4.3-5.6%204.3v-11h11z%22%2F%3E%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E%0A",
               "x_pos": 1046,
               "y_pos": 663,
-              "description": "Notebook file"
+              "description": "Run notebook file"
             }
           },
           "inputs": [
@@ -183,21 +189,23 @@
           "type": "execution_node",
           "op": "execute-notebook-node",
           "app_data": {
-            "filename": "verification.ipynb",
-            "runtime_image": "quay.io/mmurakam/industrial-edge-ml-pipeline-image:v0.13.0",
-            "env_vars": [
-              "MODEL_FILE=model.joblib"
-            ],
-            "include_subdirectories": false,
-            "invalidNodeError": null,
-            "outputs": [],
-            "dependencies": [],
+            "label": "verification.ipynb",
+            "component_parameters": {
+              "filename": "verification.ipynb",
+              "runtime_image": "quay.io/mmurakam/industrial-edge-ml-pipeline-image:v0.13.0",
+              "env_vars": [
+                "MODEL_FILE=model.joblib"
+              ],
+              "include_subdirectories": false,
+              "outputs": [],
+              "dependencies": []
+            },
             "ui_data": {
               "label": "verification.ipynb",
               "image": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20viewBox%3D%220%200%2022%2022%22%3E%0A%20%20%3Cg%20class%3D%22jp-icon-warn0%20jp-icon-selectable%22%20fill%3D%22%23EF6C00%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M18.7%203.3v15.4H3.3V3.3h15.4m1.5-1.5H1.8v18.3h18.3l.1-18.3z%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M16.5%2016.5l-5.4-4.3-5.6%204.3v-11h11z%22%2F%3E%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E%0A",
               "x_pos": 1483,
               "y_pos": 688,
-              "description": "Notebook file"
+              "description": "Run notebook file"
             }
           },
           "inputs": [
@@ -241,26 +249,28 @@
           "type": "execution_node",
           "op": "execute-notebook-node",
           "app_data": {
-            "filename": "push-model.ipynb",
-            "runtime_image": "quay.io/mmurakam/industrial-edge-ml-pipeline-image:v0.13.0",
-            "env_vars": [
-              "S3_ENDPOINT_URL=http://s3.openshift-storage.svc.cluster.local/",
-              "S3_ACCESS_KEY=",
-              "S3_SECRET_KEY=",
-              "OPS_REPO_LOCATION=",
-              "GIT_USER=",
-              "GIT_PASSWORD="
-            ],
-            "include_subdirectories": false,
-            "invalidNodeError": null,
-            "outputs": [],
-            "dependencies": [],
+            "label": "push-model.ipynb",
+            "component_parameters": {
+              "filename": "push-model.ipynb",
+              "runtime_image": "quay.io/mmurakam/industrial-edge-ml-pipeline-image:v0.13.0",
+              "env_vars": [
+                "S3_ENDPOINT_URL=http://s3.openshift-storage.svc.cluster.local/",
+                "S3_ACCESS_KEY=",
+                "S3_SECRET_KEY=",
+                "OPS_REPO_LOCATION=",
+                "GIT_USER=",
+                "GIT_PASSWORD="
+              ],
+              "include_subdirectories": false,
+              "outputs": [],
+              "dependencies": []
+            },
             "ui_data": {
               "label": "push-model.ipynb",
               "image": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20viewBox%3D%220%200%2022%2022%22%3E%0A%20%20%3Cg%20class%3D%22jp-icon-warn0%20jp-icon-selectable%22%20fill%3D%22%23EF6C00%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M18.7%203.3v15.4H3.3V3.3h15.4m1.5-1.5H1.8v18.3h18.3l.1-18.3z%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M16.5%2016.5l-5.4-4.3-5.6%204.3v-11h11z%22%2F%3E%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E%0A",
               "x_pos": 1798,
               "y_pos": 689,
-              "description": "Notebook file"
+              "description": "Run notebook file"
             }
           },
           "inputs": [
@@ -304,7 +314,11 @@
         "ui_data": {
           "comments": []
         },
-        "version": 3
+        "version": 7,
+        "properties": {
+          "name": "demo",
+          "runtime": "Generic"
+        }
       },
       "runtime_ref": ""
     }
