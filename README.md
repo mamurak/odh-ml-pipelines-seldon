@@ -1,12 +1,17 @@
 # Table of contents
-1. [Getting started](#getting-started)
+1. [High-level architecture](#high-level-architecture)
+2. [Getting started](#getting-started)
     * [Prerequisites](#Prerequisites)
     * [Deploying the environment](#deploying-the-environment)
     * [Configure the Elyra environment](#configure-the-elyra-environment)
-2. [How-To](#how-to)
-3. [Troubleshooting](#troubleshooting)
-4. [Folder structure](#folder-structure)
-5. [References](#references)
+3. [How-To](#how-to)
+4. [Troubleshooting](#troubleshooting)
+5. [Folder structure](#folder-structure)
+6. [References](#references)
+
+# High-level architecture
+
+![Architecture diagram](high-level-architecture.png "Architecture diagram")
 
 # Getting started
 
